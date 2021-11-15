@@ -1,4 +1,4 @@
 // dependencies layer
-import 'normalize.css';
 
 // developers styles layer
+import "../css/global.scss";
