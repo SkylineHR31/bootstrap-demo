@@ -1,6 +1,6 @@
 @import "./normalize.css";
+@import "~bootstrap/scss/bootstrap";
 
-h1 {
-    display: flex;
-    align-items: center;
+body {
+    font-family: Arial, sans-serif;
 }
