@@ -1,3 +1,11 @@
 @mixin testShadow {
     text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
 }
+
+// adaptive
+
+@mixin _992 {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
