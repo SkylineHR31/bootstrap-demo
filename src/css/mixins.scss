@@ -1,11 +1,30 @@
 @mixin testShadow {
-    text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+  text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+}
+
+@mixin listStyles {
+  list-style: none;
+  padding: 0;
+
+  li {
+    box-sizing: border-box;
+
+    &:nth-child(odd) {
+      padding-right: 10px;
+    }
+  }
 }
 
 // adaptive
 
 @mixin _992 {
-    @media screen and (min-width: 992px) {
-        @content;
-    }
+  @media screen and (min-width: 992px) {
+    @content;
+  }
 }
+
+@mixin _576 {
+    @media screen and (min-width: 576px) {
+      @content;
+    }
+  }
