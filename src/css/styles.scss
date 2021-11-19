@@ -1,25 +1,38 @@
 @import "./mixins.scss";
 
+.section {
+  padding: 50px 0;
+}
+
 .product-name {
-    padding: 50px 0;
-  
-    &-img-wrapper {
-      height: 100%;
-      min-height: 214px;
-    }
-  
-    &-title {
-      font-size: 59px;
-      line-height: 59px;
-      margin-bottom: 51px;
-      @include testShadow;
-    }
-  
-    &-list {
-      @include testShadow;
-      padding: 0;
-      font-size: 20px;
-      list-style: none;
-      line-height: 1.8;
-    }
+  &-img-wrapper {
+    min-height: 214px;
   }
+
+  &-title {
+    font-size: 59px;
+    line-height: 59px;
+    margin-bottom: 51px;
+    @include testShadow;
+  }
+
+  &-list {
+    @include testShadow;
+    padding: 0;
+    font-size: 20px;
+    list-style: none;
+    line-height: 1.8;
+  }
+}
+
+.about-product {
+  &-title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  &-text {
+    line-height: 1.5;
+  }
+}
