@@ -17,6 +17,12 @@
 
 // adaptive
 
+@mixin _1200 {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+
 @mixin _992 {
   @media screen and (min-width: 992px) {
     @content;

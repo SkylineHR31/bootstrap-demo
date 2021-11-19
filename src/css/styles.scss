@@ -127,7 +127,7 @@
       left: -22px;
       top: 22px;
       position: absolute;
-      border-color:  transparent #ececec transparent transparent;
+      border-color: transparent #ececec transparent transparent;
       border-style: solid;
       border-width: 11px;
     }
@@ -136,4 +136,53 @@
       font-size: 14px;
     }
   }
+}
+
+.buyit {
+  .accordion-control {
+    font-size: 40px;
+    text-decoration: none;
+  }
+
+  .accordion-btn {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &-item {
+    &-type {
+      font-size: 24px;
+    }
+  }
+}
+
+.footer {
+  &-container {
+    &.container-xl {
+      @include _1200 {
+        max-width: 992px;
+      }
+    }
+  }
+
+  &-text-link {
+    line-height: 1.5;
+
+    i {
+      font-size: 28px;
+    }
+  }
+  
+  &-icon-link {
+    background-color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+  }
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px 0 5px;
 }
